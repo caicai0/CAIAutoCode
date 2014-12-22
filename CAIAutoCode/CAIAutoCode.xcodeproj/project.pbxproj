@@ -15,8 +15,8 @@
 		4BA3A6681A4812EE00D13037 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3A6671A4812EE00D13037 /* Images.xcassets */; };
 		4BA3A66B1A4812EE00D13037 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3A6691A4812EE00D13037 /* LaunchScreen.xib */; };
 		4BA3A6771A4812EE00D13037 /* CAIAutoCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3A6761A4812EE00D13037 /* CAIAutoCodeTests.m */; };
-		4BA3A6821A48134800D13037 /* normalCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3A6811A48134800D13037 /* normalCode.m */; };
-		4BA3A6851A48186B00D13037 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3A6841A48186B00D13037 /* EXTRuntimeExtensions.m */; };
+		4BA3A6821A48134800D13037 /* CAIAutoEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3A6811A48134800D13037 /* CAIAutoEncode.m */; };
+		4BB4F57C1A48604C00B206CA /* AClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB4F57B1A48604C00B206CA /* AClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +44,10 @@
 		4BA3A6701A4812EE00D13037 /* CAIAutoCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CAIAutoCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA3A6751A4812EE00D13037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BA3A6761A4812EE00D13037 /* CAIAutoCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAIAutoCodeTests.m; sourceTree = "<group>"; };
-		4BA3A6801A48134800D13037 /* normalCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = normalCode.h; sourceTree = "<group>"; };
-		4BA3A6811A48134800D13037 /* normalCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = normalCode.m; sourceTree = "<group>"; };
-		4BA3A6831A48186B00D13037 /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTRuntimeExtensions.h; sourceTree = "<group>"; };
-		4BA3A6841A48186B00D13037 /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTRuntimeExtensions.m; sourceTree = "<group>"; };
+		4BA3A6801A48134800D13037 /* CAIAutoEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAIAutoEncode.h; sourceTree = "<group>"; };
+		4BA3A6811A48134800D13037 /* CAIAutoEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAIAutoEncode.m; sourceTree = "<group>"; };
+		4BB4F57A1A48604C00B206CA /* AClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AClass.h; sourceTree = "<group>"; };
+		4BB4F57B1A48604C00B206CA /* AClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +89,6 @@
 		4BA3A6561A4812EE00D13037 /* CAIAutoCode */ = {
 			isa = PBXGroup;
 			children = (
-				4BA3A6831A48186B00D13037 /* EXTRuntimeExtensions.h */,
-				4BA3A6841A48186B00D13037 /* EXTRuntimeExtensions.m */,
 				4BA3A65B1A4812EE00D13037 /* AppDelegate.h */,
 				4BA3A65C1A4812EE00D13037 /* AppDelegate.m */,
 				4BA3A6611A4812EE00D13037 /* ViewController.h */,
@@ -100,8 +98,10 @@
 				4BA3A6691A4812EE00D13037 /* LaunchScreen.xib */,
 				4BA3A65E1A4812EE00D13037 /* CAIAutoCode.xcdatamodeld */,
 				4BA3A6571A4812EE00D13037 /* Supporting Files */,
-				4BA3A6801A48134800D13037 /* normalCode.h */,
-				4BA3A6811A48134800D13037 /* normalCode.m */,
+				4BA3A6801A48134800D13037 /* CAIAutoEncode.h */,
+				4BA3A6811A48134800D13037 /* CAIAutoEncode.m */,
+				4BB4F57A1A48604C00B206CA /* AClass.h */,
+				4BB4F57B1A48604C00B206CA /* AClass.m */,
 			);
 			path = CAIAutoCode;
 			sourceTree = "<group>";
@@ -233,10 +233,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BA3A65D1A4812EE00D13037 /* AppDelegate.m in Sources */,
+				4BB4F57C1A48604C00B206CA /* AClass.m in Sources */,
 				4BA3A6601A4812EE00D13037 /* CAIAutoCode.xcdatamodeld in Sources */,
 				4BA3A6631A4812EE00D13037 /* ViewController.m in Sources */,
-				4BA3A6821A48134800D13037 /* normalCode.m in Sources */,
-				4BA3A6851A48186B00D13037 /* EXTRuntimeExtensions.m in Sources */,
+				4BA3A6821A48134800D13037 /* CAIAutoEncode.m in Sources */,
 				4BA3A65A1A4812EE00D13037 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +430,7 @@
 				4BA3A67C1A4812EE00D13037 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BA3A67D1A4812EE00D13037 /* Build configuration list for PBXNativeTarget "CAIAutoCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +439,7 @@
 				4BA3A67F1A4812EE00D13037 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

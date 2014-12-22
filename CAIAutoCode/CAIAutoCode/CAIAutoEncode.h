@@ -8,11 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface normalCode : NSObject <NSCoding>
-
-@property NSInteger numInt;
-@property NSString *txt;
-@property float numFloat;
-@property double numdouble;
+@interface CAIAutoEncode : NSObject <NSCoding>
 
 @end

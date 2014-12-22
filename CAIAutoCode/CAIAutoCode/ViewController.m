@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AClass.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    AClass *a = [[AClass alloc]init];
+    a.string = @"123";
+    a.integer = 12323123;
+    a.numFloat = 123.4;
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:a];
+    AClass * b = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    NSLog(@"%@,%ld,%f",b.string,b.integer,b.numFloat);
     // Do any additional setup after loading the view, typically from a nib.
 }
 
